@@ -1,6 +1,5 @@
 package com.techhabiles.enums
 
-interface ColorDefination {
-
+interface ColorDefinition {
     fun isBlack(): Boolean
 }

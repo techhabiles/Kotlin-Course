@@ -1,6 +1,6 @@
 package com.techhabiles.enums
 
-enum class Gender(val genderName: String) : ColorDefination{
+enum class Gender(val genderName: String) : ColorDefinition{
     MALE("Male"){
         override fun getHeight(): Int {
             return 168
