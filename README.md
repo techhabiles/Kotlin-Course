@@ -7,3 +7,5 @@
 #### Generic & Extension functions
 #### Null Safety 
 #### Scope Functions
+#### lateinit vs lazy
+#### Exception/Error Handling
