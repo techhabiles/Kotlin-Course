@@ -9,3 +9,5 @@
 #### Scope Functions
 #### lateinit vs lazy
 #### Exception/Error Handling
+#### Kotlin Collections
+#### Kotlin Equality
