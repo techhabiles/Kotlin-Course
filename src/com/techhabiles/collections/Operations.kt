@@ -1,15 +1,29 @@
 package com.techhabiles.collections
 
-class User(val name:String, val age:Int){}
+data class User(val name:String, val age:Int): Comparable<User>{
+    override fun compareTo(other: User): Int {
+        // positive - greater
+        // negative - less than
+        // zero == equal
+        if( name.length > other.name.length)
+            return 1
+        else if( name.length < other.name.length)
+            return -1
+        else
+            return  0
+    }
+
+}
 
 class UserGroup(val users: List<User>){}
 
-fun getUserList() : List<User>{
-    return mutableListOf<User>().apply {
+fun getUserList() : ArrayList<User>{
+    return ArrayList<User>().apply {
         add(User("Krish",45))
         add(User("Ravi", 25))
         add(User("Amit", 30))
-        add(User("Rupesh", 20))
+        add(User("Anees", 20))
+        add(User("Rupesh", 22))
     }
 }
 fun getSecondUserList() : List<User>{
